@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/vikingos/*"
+  to = "/vikingos/:splat"
+  status = 200
