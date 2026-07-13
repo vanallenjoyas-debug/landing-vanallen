@@ -1,152 +1,748 @@
-📦 Despacho en 24hs hábiles · 3 cuotas sin interés · Envío gratis superando $100.000
-Van Allen Joyas
-Van Allen Joyas
-Artesanía vikinga · Hecha en Argentina
 
-No estás comprando una joya.
-Estás eligiendo un talismán.
-Una pieza con historia, símbolo y propósito. Fabricada a mano, con los mismos métodos que los artesanos de la antigüedad.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Van Allen Joyas</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
-No hacemos joyas en serie. Hacemos joyas en serio, con las mismas técnicas que se usaron a lo largo de la historia.
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-Ver los talismanes
-Despacho en 24hs · Stock disponible
-🔒 Compra segura
-📦 Despacho 24hs hábiles
-💳 3 cuotas sin interés
-⭐ +500 reseñas reales
-🇦🇷 Hecho en Argentina
-Por qué eligen Van Allen
+  :root {
+    --negro: #0a0a0a;
+    --carbon: #1a1a1a;
+    --blanco: #ffffff;
+    --gris-fondo: #f5f5f5;
+    --gris-medio: #e0e0e0;
+    --gris: #555;
+    --gris-claro: #333;
+  }
 
-Hay mil vendedores de joyas.
-Pocos fabrican talismanes.
-01
-No es decorativo. Es intencional.
-Cada pieza tiene carga simbólica y propósito. Eso nos diferencia de aquel que solo busca algo lindo para regalar.
+  html { scroll-behavior: smooth; }
 
-02
-Ves cómo se hace.
-Mostramos el taller, el fuego, los errores, el volver a empezar. Confían en nosotros porque ven el proceso real, no porque se lo prometemos — y eso nadie lo muestra.
+  body {
+    background: var(--blanco);
+    color: var(--negro);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
 
-03
-Sin producción en masa.
-Cada talismán es fabricado con criterio, conocimiento y obsesión por el detalle. Hacemos un talismán que realmente te va a acompañar en tu día a día.
+  .top-bar {
+    background: var(--negro);
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    border-bottom: 1px solid #222;
+  }
 
-04
-Carga ancestral.
-Piezas con carga ancestral, con historia y con las mismas técnicas que utilizaban los antiguos alquimistas.
+  .header {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    border-bottom: 1px solid var(--gris-medio);
+    background: var(--blanco);
+  }
 
-05
-Identidad vikinga real.
-Protección, identidad, pertenencia. Eso solo lo puede ofrecer un joyero que conoce de la cultura vikinga — y esa es la identidad de Van Allen.
+  .logo-img {
+    height: 52px;
+    width: 52px;
+    object-fit: contain;
+    filter: invert(1);
+  }
 
-06
-Sin frases vacías.
-No hablamos como marca. Hablamos como lo que somos: una familia que está en todos los detalles, para que tu experiencia de compra sea la mejor que hayas elegido en tu vida.
+  .logo-text {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: var(--negro);
+    text-transform: uppercase;
+  }
 
-Los más elegidos
+  .hero {
+    padding: 64px 24px 56px;
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+  }
 
-Tres talismanes.
-Tres historias.
-Más vendido · 33 reseñas
-Brazalete Torque Lobo Fenrir Bronce
-Brazalete Torque
-Lobo Fenrir
-Bronce · Regulable
+  .hero-eyebrow {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--negro);
+    margin-bottom: 24px;
+  }
 
-★★★★★
-33 reseñas verificadas
-Los jarls vikingos entregaban torques a sus hombres más fieles. Portarlo era una declaración de valor y lealtad. Fenrir — el lobo que los dioses temían — representa la fuerza que no puede ser domesticada.
+  .hero-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(32px, 8vw, 60px);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--negro);
+    margin-bottom: 8px;
+  }
 
-$67.300
+  .hero-title-2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(32px, 8vw, 60px);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--negro);
+    margin-bottom: 28px;
+    display: block;
+    text-decoration: none;
+  }
 
-3 cuotas sin interés de $22.433 · 10% OFF con transferencia
+  .hero-sub {
+    font-size: 17px;
+    color: var(--gris);
+    max-width: 520px;
+    margin: 0 auto 16px;
+    line-height: 1.8;
+  }
 
-Quiero este talismán →
-Plata 925 · Certificado
-Martillo de Thor Mjolnir Plata 925
-Martillo de Thor
-Mjolnir
-★★★★★
-Reseñas verificadas
-El mjolnir no era solo un arma — era el símbolo de protección del hogar, la familia y la tierra. Los vikingos lo usaban como amuleto sagrado antes de cada batalla. Plata 925 con certificado de autenticidad incluido.
+  .hero-sub-2 {
+    font-size: 15px;
+    color: #888;
+    max-width: 480px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    font-style: italic;
+  }
 
-$136.200
+  .hero-cta {
+    display: inline-block;
+    background: var(--negro);
+    color: var(--blanco);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 18px 44px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
 
-3 cuotas sin interés de $45.400 · 10% OFF con transferencia
+  .hero-cta:hover { background: #333; }
 
-Quiero este talismán →
-Con runas grabadas
-Medalla Vegvisir con Runas Plata 925
-Medalla Vegvisir
-con Runas
-Plata 925 · Runas grabadas
+  .hero-sub-cta {
+    display: block;
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 1px;
+    margin-top: 12px;
+  }
 
-★★★★★
-Reseñas verificadas
-El Vegvisir era la brújula que guiaba a los navegantes vikingos. Quien lo portaba jamás se perdía, ni en el mar ni en las tormentas de la vida. Cada runa grabada tiene su propio significado.
+  .trust-bar {
+    background: var(--gris-fondo);
+    border-top: 1px solid var(--gris-medio);
+    border-bottom: 1px solid var(--gris-medio);
+    padding: 18px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
 
-$92.500
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--negro);
+    opacity: 0.7;
+  }
 
-3 cuotas sin interés de $30.833 · 10% OFF con transferencia
+  .sep {
+    height: 1px;
+    background: var(--gris-medio);
+  }
 
-Quiero este talismán →
-Quiénes somos
+  .divider-negro {
+    width: 48px;
+    height: 2px;
+    background: var(--negro);
+    margin: 0 auto 32px;
+  }
 
-Van Allen no es una fábrica.
+  /* POR QUE */
+  .porq-section {
+    padding: 64px 24px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-Es un taller donde cada pieza pasa por manos que conocen la historia detrás del símbolo. Trabajamos bronce y plata 925 con los mismos métodos que los artesanos de la antigüedad.
+  .section-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--negro);
+    text-align: center;
+    margin-bottom: 12px;
+  }
 
-Mostramos el taller, el fuego, los errores, el volver a empezar. Porque un talismán sin proceso no es un talismán.
+  .section-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(20px, 5vw, 32px);
+    font-weight: 700;
+    color: var(--negro);
+    text-align: center;
+    margin-bottom: 48px;
+    line-height: 1.3;
+  }
 
-— Javier, joyero artesanal desde 2020
+  .porq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
 
-Lo que dicen quienes ya los tienen
+  @media (min-width: 600px) {
+    .porq-grid { grid-template-columns: 1fr 1fr; }
+  }
 
-No te lo decimos nosotros.
-Te lo dicen ellos.
-★★★★★
-"Lo compré como regalo para mi novio, quedó encantado, se lo pasa presumiéndolo con todo el mundo. El trabajo que hacen es increíble, sin dudas cuando mi economía me lo permita adquiriré más de sus productos."
+  .porq-item {
+    background: var(--gris-fondo);
+    padding: 28px 24px;
+    border-left: 3px solid transparent;
+    transition: border-color 0.2s;
+  }
 
-— Lucía
+  .porq-item:hover { border-left-color: var(--negro); }
 
-★★★★★
-"No todo es arte, sin embargo el arte puede estar en cualquier lado. Y sin duda amigos lo que uds. hacen es arte. La dedicación de cada pieza, la presentación, el trato, la intención puesta a quien se lo adquiere."
+  .porq-num {
+    font-family: 'Cinzel', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--negro);
+    opacity: 0.15;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
 
-— Martín
+  .porq-titulo {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--negro);
+    margin-bottom: 8px;
+  }
 
-★★★★★
-"Hermoso talismán, muy buen trabajo de los dos lados y a la perfección y con mucha magia. Vino con cordón de regalo y lo uso así, jamás se me rompió y nunca me lo saco. Me da mucha protección."
+  .porq-texto {
+    font-size: 14px;
+    color: var(--gris);
+    line-height: 1.7;
+  }
 
-— Jonathan
+  /* PRODUCTS */
+  .products-section {
+    background: var(--gris-fondo);
+    padding: 64px 16px;
+    border-top: 1px solid var(--gris-medio);
+    border-bottom: 1px solid var(--gris-medio);
+  }
 
-Preguntas frecuentes
+  .products-inner { max-width: 1000px; margin: 0 auto; }
 
-Lo que nos preguntan antes de comprar.
-🔍
-¿La plata es 925 de verdad?
+  .products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    margin-top: 40px;
+  }
 
-Sí. Todas nuestras piezas en plata tienen certificado de autenticidad incluido. Trabajamos solo con materiales verificados — bronce y plata 925. No usamos alpaca, no usamos bañados. Lo que dice la ficha es lo que recibís.
+  @media (min-width: 600px) {
+    .products-grid { grid-template-columns: repeat(3, 1fr); }
+  }
 
-📦
-¿Cuánto tarda en llegar?
+  .product-card {
+    background: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--gris-medio);
+  }
 
-Despachamos en 24 horas hábiles con packaging exclusivo. Los tiempos de entrega dependen del servicio de envío elegido — generalmente entre 3 y 7 días hábiles según la provincia.
+  .product-badge {
+    background: var(--negro);
+    color: var(--blanco);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    display: block;
+  }
 
-💳
-¿Puedo pagar en cuotas?
+  .product-img-wrap {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: var(--gris-fondo);
+  }
 
-Sí. 3 cuotas sin interés con todas las tarjetas de crédito. También tenés 10% de descuento pagando con transferencia bancaria.
+  .product-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
 
-↩️
-¿Y si no me gusta cuando lo recibo?
+  .product-card:hover .product-img-wrap img { transform: scale(1.05); }
 
-Podés contactarnos directamente por WhatsApp. Trabajamos para que cada pieza llegue exactamente como se ve — por eso mostramos fotos reales, sin filtros de estudio que distorsionen el producto.
+  .product-info {
+    padding: 24px 20px 28px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-top: 1px solid var(--gris-medio);
+  }
 
-Tu talismán te está esperando.
-Stock disponible · Despacho en 24hs · 3 cuotas sin interés
+  .product-name {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--negro);
+    margin-bottom: 4px;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
 
-Elegir mi talismán →
-© 2026 Van Allen Joyas · San Miguel, Buenos Aires
+  .product-material {
+    font-size: 10px;
+    color: #999;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
 
-WhatsApp  ·  Preguntas frecuentes  ·  Certificado de autenticidad
+  .stars-row { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+  .stars { color: var(--negro); font-size: 12px; letter-spacing: 2px; }
+  .review-count { font-size: 10px; color: #999; }
+
+  .product-story {
+    font-size: 13px;
+    color: var(--gris);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  .product-price {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--negro);
+    margin-bottom: 4px;
+  }
+
+  .product-cuotas { font-size: 11px; color: #999; margin-bottom: 16px; }
+
+  .product-cta {
+    display: block;
+    background: var(--negro);
+    color: var(--blanco);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .product-cta:hover { background: #333; }
+
+  /* PROCESO */
+  .proceso-section {
+    padding: 64px 24px;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .proceso-text {
+    font-size: 18px;
+    line-height: 1.9;
+    color: var(--gris);
+    margin-bottom: 24px;
+  }
+
+  .proceso-text strong { color: var(--negro); font-weight: 600; }
+
+  .proceso-firma {
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+    border-top: 1px solid var(--gris-medio);
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
+  /* REVIEWS */
+  .reviews-section {
+    background: var(--gris-fondo);
+    padding: 64px 24px;
+    border-top: 1px solid var(--gris-medio);
+  }
+
+  .reviews-inner { max-width: 960px; margin: 0 auto; }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: 600px) {
+    .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .review-card {
+    background: var(--blanco);
+    padding: 24px 20px;
+    border: 1px solid var(--gris-medio);
+    border-top: 2px solid var(--negro);
+  }
+
+  .review-stars { color: var(--negro); font-size: 11px; letter-spacing: 3px; margin-bottom: 12px; }
+  .review-text { font-size: 14px; color: var(--gris); line-height: 1.7; margin-bottom: 14px; font-style: italic; }
+  .review-author { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #999; }
+
+  /* OBJECIONES */
+  .objeciones-section {
+    padding: 64px 24px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .objecion-item {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--gris-medio);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .objecion-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+  .objecion-pregunta { font-size: 14px; font-weight: 700; color: var(--negro); margin-bottom: 8px; }
+  .objecion-respuesta { font-size: 14px; color: var(--gris); line-height: 1.7; }
+
+  /* BOTTOM CTA */
+  .bottom-cta {
+    background: var(--blanco);
+    padding: 48px 24px;
+    text-align: center;
+    border-top: 1px solid var(--gris-medio);
+  }
+
+  .bottom-cta-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(18px, 4vw, 26px);
+    font-weight: 700;
+    color: var(--negro);
+    margin-bottom: 10px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+
+  .bottom-cta-sub {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+  }
+
+  .bottom-cta-btn {
+    display: inline-block;
+    background: var(--negro);
+    color: var(--blanco);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 14px 40px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .bottom-cta-btn:hover { background: #333; }
+
+  .footer {
+    background: var(--blanco);
+    border-top: 1px solid var(--gris-medio);
+    padding: 28px 24px;
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 1px;
+    line-height: 2;
+  }
+
+  .footer a { color: #999; text-decoration: none; }
+  .footer a:hover { color: var(--negro); }
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3724166294276688');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3724166294276688&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<div class="top-bar">📦 Despacho en 24hs hábiles · 3 cuotas sin interés · Envío gratis superando $100.000</div>
+
+<header class="header">
+  <img src="logo.jpg" class="logo-img" alt="Van Allen Joyas">
+  <div class="logo-text">Van Allen Joyas</div>
+</header>
+
+<section class="hero">
+  <p class="hero-eyebrow">Artesanía vikinga · Hecha en Argentina</p>
+  <h1 class="hero-title">No estás comprando una joya.</h1>
+  <span class="hero-title-2">Estás eligiendo un talismán.</span>
+  <p class="hero-sub">Una pieza con historia, símbolo y propósito. Fabricada a mano, con los mismos métodos que los artesanos de la antigüedad.</p>
+  <p class="hero-sub-2">No hacemos joyas en serie. Hacemos joyas en serio, con las mismas técnicas que se usaron a lo largo de la historia.</p>
+  <a href="#productos" class="hero-cta">Ver los talismanes</a>
+  <span class="hero-sub-cta"><strong>Despacho en 24hs · Stock disponible</strong></span>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-item">🔒 Compra segura</div>
+  <div class="trust-item">📦 Despacho 24hs hábiles</div>
+  <div class="trust-item">💳 3 cuotas sin interés</div>
+  <div class="trust-item">⭐ +500 reseñas reales</div>
+  <div class="trust-item">🇦🇷 Hecho en Argentina</div>
+</div>
+
+<div class="sep"></div>
+
+<section class="porq-section">
+  <p class="section-label">Por qué eligen Van Allen</p>
+  <h2 class="section-title">Hay mil vendedores de joyas.<br>Pocos fabrican talismanes.</h2>
+  <div class="porq-grid">
+    <div class="porq-item">
+      <div class="porq-num">01</div>
+      <div class="porq-titulo">No es decorativo. Es intencional.</div>
+      <p class="porq-texto">Cada pieza tiene carga simbólica y propósito. Eso nos diferencia de aquel que solo busca algo lindo para regalar.</p>
+    </div>
+    <div class="porq-item">
+      <div class="porq-num">02</div>
+      <div class="porq-titulo">Ves cómo se hace.</div>
+      <p class="porq-texto">Mostramos el taller, el fuego, los errores, el volver a empezar. Confían en nosotros porque ven el proceso real, no porque se lo prometemos — y eso nadie lo muestra.</p>
+    </div>
+    <div class="porq-item">
+      <div class="porq-num">03</div>
+      <div class="porq-titulo">Sin producción en masa.</div>
+      <p class="porq-texto">Cada talismán es fabricado con criterio, conocimiento y obsesión por el detalle. Hacemos un talismán que realmente te va a acompañar en tu día a día.</p>
+    </div>
+    <div class="porq-item">
+      <div class="porq-num">04</div>
+      <div class="porq-titulo">Carga ancestral.</div>
+      <p class="porq-texto">Piezas con carga ancestral, con historia y con las mismas técnicas que utilizaban los antiguos alquimistas.</p>
+    </div>
+    <div class="porq-item">
+      <div class="porq-num">05</div>
+      <div class="porq-titulo">Identidad vikinga real.</div>
+      <p class="porq-texto">Protección, identidad, pertenencia. Eso solo lo puede ofrecer un joyero que conoce de la cultura vikinga — y esa es la identidad de Van Allen.</p>
+    </div>
+    <div class="porq-item">
+      <div class="porq-num">06</div>
+      <div class="porq-titulo">Sin frases vacías.</div>
+      <p class="porq-texto">No hablamos como marca. Hablamos como lo que somos: una familia que está en todos los detalles, para que tu experiencia de compra sea la mejor que hayas elegido en tu vida.</p>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<section class="products-section" id="productos">
+  <div class="products-inner">
+    <p class="section-label">Los más elegidos</p>
+    <h2 class="section-title">Tres talismanes.<br>Tres historias.</h2>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <span class="product-badge">Más vendido · 33 reseñas</span>
+        <div class="product-img-wrap">
+          <img src="fenrir.jpg" alt="Brazalete Torque Lobo Fenrir Bronce" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h2 class="product-name">Brazalete Torque<br>Lobo Fenrir</h2>
+          <p class="product-material">Bronce · Regulable</p>
+          <div class="stars-row">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">33 reseñas verificadas</span>
+          </div>
+          <p class="product-story">Los jarls vikingos entregaban torques a sus hombres más fieles. Portarlo era una declaración de valor y lealtad. Fenrir — el lobo que los dioses temían — representa la fuerza que no puede ser domesticada.</p>
+          <p class="product-price">$67.300</p>
+          <p class="product-cuotas">3 cuotas sin interés de $22.433 · 10% OFF con transferencia</p>
+          <a href="https://vanallenjoyas.com.ar/productos/brazalete-tipo-torque-vikingo-lobo-fenrir-bronce/" class="product-cta">Quiero este talismán →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-badge">Plata 925 · Certificado</span>
+        <div class="product-img-wrap">
+          <img src="mjolnir.jpg" alt="Martillo de Thor Mjolnir Plata 925" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h2 class="product-name">Martillo de Thor<br>Mjolnir</h2>
+          <p class="product-material"></p>
+          <div class="stars-row">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">Reseñas verificadas</span>
+          </div>
+          <p class="product-story">El mjolnir no era solo un arma — era el símbolo de protección del hogar, la familia y la tierra. Los vikingos lo usaban como amuleto sagrado antes de cada batalla. Plata 925 con certificado de autenticidad incluido.</p>
+          <p class="product-price">$136.200</p>
+          <p class="product-cuotas">3 cuotas sin interés de $45.400 · 10% OFF con transferencia</p>
+          <a href="https://vanallenjoyas.com.ar/productos/martillo-de-thor-vikingo-mjolnir-plata-9251/" class="product-cta">Quiero este talismán →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-badge">Con runas grabadas</span>
+        <div class="product-img-wrap">
+          <img src="vegvisir.jpg" alt="Medalla Vegvisir con Runas Plata 925" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h2 class="product-name">Medalla Vegvisir<br>con Runas</h2>
+          <p class="product-material">Plata 925 · Runas grabadas</p>
+          <div class="stars-row">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">Reseñas verificadas</span>
+          </div>
+          <p class="product-story">El Vegvisir era la brújula que guiaba a los navegantes vikingos. Quien lo portaba jamás se perdía, ni en el mar ni en las tormentas de la vida. Cada runa grabada tiene su propio significado.</p>
+          <p class="product-price">$92.500</p>
+          <p class="product-cuotas">3 cuotas sin interés de $30.833 · 10% OFF con transferencia</p>
+          <a href="https://vanallenjoyas.com.ar/productos/medalla-vegvisir-con-runas-plata-925/" class="product-cta">Quiero este talismán →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<section class="proceso-section">
+  <p class="section-label">Quiénes somos</p>
+  <div class="divider-negro"></div>
+  <p class="proceso-text">
+    Van Allen no es una fábrica.<br><br>
+    Es un taller donde <strong>cada pieza pasa por manos que conocen la historia detrás del símbolo.</strong> Trabajamos bronce y plata 925 con los mismos métodos que los artesanos de la antigüedad.<br><br>
+    Mostramos el taller, el fuego, los errores, el volver a empezar. <strong>Porque un talismán sin proceso no es un talismán.</strong>
+  </p>
+  <p class="proceso-firma">— Javier, joyero artesanal desde 2020</p>
+</section>
+
+<div class="sep"></div>
+
+<section class="reviews-section">
+  <div class="reviews-inner">
+    <p class="section-label">Lo que dicen quienes ya los tienen</p>
+    <h2 class="section-title">No te lo decimos nosotros.<br>Te lo dicen ellos.</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Lo compré como regalo para mi novio, quedó encantado, se lo pasa presumiéndolo con todo el mundo. El trabajo que hacen es increíble, sin dudas cuando mi economía me lo permita adquiriré más de sus productos."</p>
+        <p class="review-author">— Lucía</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"No todo es arte, sin embargo el arte puede estar en cualquier lado. Y sin duda amigos lo que uds. hacen es arte. La dedicación de cada pieza, la presentación, el trato, la intención puesta a quien se lo adquiere."</p>
+        <p class="review-author">— Martín</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Hermoso talismán, muy buen trabajo de los dos lados y a la perfección y con mucha magia. Vino con cordón de regalo y lo uso así, jamás se me rompió y nunca me lo saco. Me da mucha protección."</p>
+        <p class="review-author">— Jonathan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<section class="objeciones-section">
+  <p class="section-label">Preguntas frecuentes</p>
+  <h2 class="section-title" style="text-align:left; margin-bottom:32px;">Lo que nos preguntan antes de comprar.</h2>
+  <div class="objecion-item">
+    <span class="objecion-icon">🔍</span>
+    <div>
+      <p class="objecion-pregunta">¿La plata es 925 de verdad?</p>
+      <p class="objecion-respuesta">Sí. Todas nuestras piezas en plata tienen certificado de autenticidad incluido. Trabajamos solo con materiales verificados — bronce y plata 925. No usamos alpaca, no usamos bañados. Lo que dice la ficha es lo que recibís.</p>
+    </div>
+  </div>
+  <div class="objecion-item">
+    <span class="objecion-icon">📦</span>
+    <div>
+      <p class="objecion-pregunta">¿Cuánto tarda en llegar?</p>
+      <p class="objecion-respuesta">Despachamos en 24 horas hábiles con packaging exclusivo. Los tiempos de entrega dependen del servicio de envío elegido — generalmente entre 3 y 7 días hábiles según la provincia.</p>
+    </div>
+  </div>
+  <div class="objecion-item">
+    <span class="objecion-icon">💳</span>
+    <div>
+      <p class="objecion-pregunta">¿Puedo pagar en cuotas?</p>
+      <p class="objecion-respuesta">Sí. 3 cuotas sin interés con todas las tarjetas de crédito. También tenés 10% de descuento pagando con transferencia bancaria.</p>
+    </div>
+  </div>
+  <div class="objecion-item">
+    <span class="objecion-icon">↩️</span>
+    <div>
+      <p class="objecion-pregunta">¿Y si no me gusta cuando lo recibo?</p>
+      <p class="objecion-respuesta">Podés contactarnos directamente por WhatsApp. Trabajamos para que cada pieza llegue exactamente como se ve — por eso mostramos fotos reales, sin filtros de estudio que distorsionen el producto.</p>
+    </div>
+  </div>
+</section>
+
+<div class="bottom-cta">
+  <h2 class="bottom-cta-title">Tu talismán te está esperando.</h2>
+  <p class="bottom-cta-sub"><strong>Stock disponible · Despacho en 24hs · 3 cuotas sin interés</strong></p>
+  <a href="https://vanallenjoyas.com.ar/los-elegidos-para-vos/?sort_by=best-selling" class="bottom-cta-btn">Elegir mi talismán →</a>
+</div>
+
+<footer class="footer">
+  <p>© 2026 Van Allen Joyas · San Miguel, Buenos Aires</p>
+  <p style="margin-top:8px;">
+    <a href="https://wa.me/541163043703">WhatsApp</a> &nbsp;·&nbsp;
+    <a href="https://vanallenjoyas.com.ar/preguntasfrecuentes/">Preguntas frecuentes</a> &nbsp;·&nbsp;
+    <a href="https://vanallenjoyas.com.ar/certificado-online-de-autenticidad/">Certificado de autenticidad</a>
+  </p>
+</footer>
+
+</body>
+</html>
