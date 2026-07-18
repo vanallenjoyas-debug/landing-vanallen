@@ -552,6 +552,22 @@ src="https://www.facebook.com/tr?id=3724166294276688&ev=PageView&noscript=1"
   <div class="logo-text">Van Allen Joyas</div>
 </header>
 
+<section class="video-hero">
+  <div class="video-hero-wrap">
+    <video id="hero-video" src="mjolnir_hero.mp4" autoplay loop muted playsinline webkit-playsinline style="width:100%;display:block;max-height:420px;object-fit:cover;"></video>
+    <button id="mute-btn" onclick="toggleMute()" style="position:absolute;bottom:12px;right:12px;background:rgba(0,0,0,0.55);color:#fff;border:none;border-radius:50%;width:36px;height:36px;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;">🔇</button>
+  </div>
+</section>
+
+<script>
+function toggleMute() {
+  var v = document.getElementById('hero-video');
+  var btn = document.getElementById('mute-btn');
+  v.muted = !v.muted;
+  btn.textContent = v.muted ? '🔇' : '🔊';
+}
+</script>
+
 <section class="hero">
   <p class="hero-eyebrow">Artesanía vikinga · Hecha en Argentina</p>
   <h1 class="hero-title">No estás comprando una joya.</h1>
