@@ -20,6 +20,21 @@
     --gris-claro: #333;
   }
 
+  .video-hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+  }
+  .video-hero-wrap {
+    width: 100%;
+    max-width: 720px;
+    overflow: hidden;
+  }
+  @media (max-width: 599px) {
+    .video-hero-wrap { max-width: 100%; }
+  }
+
   html { scroll-behavior: smooth; }
 
   @media (max-width: 599px) {
