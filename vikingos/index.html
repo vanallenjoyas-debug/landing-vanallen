@@ -755,5 +755,23 @@ src="https://www.facebook.com/tr?id=3724166294276688&ev=PageView&noscript=1"/></
   </p>
 </footer>
 
+
+<!-- Etiquetas UTM: pasa a la tienda el origen con el que llegó la visita (o "landing" si llegó sin etiqueta) -->
+<script>
+(function(){
+  var entrada=new URLSearchParams(location.search), utm=new URLSearchParams();
+  ["utm_source","utm_medium","utm_campaign","utm_term","utm_content"].forEach(function(k){ if(entrada.get(k)) utm.set(k, entrada.get(k)); });
+  if(!utm.has("utm_source")){ utm.set("utm_source","landing"); utm.set("utm_medium","landing-vikingos"); }
+  document.querySelectorAll("a[href]").forEach(function(a){
+    try {
+      var url=new URL(a.href);
+      if(url.hostname.replace(/^www\./,"")!=="vanallenjoyas.com.ar") return;
+      utm.forEach(function(v,k){ url.searchParams.set(k,v); });
+      a.href=url.toString();
+    } catch(e) {}
+  });
+})();
+</script>
+
 </body>
 </html>
